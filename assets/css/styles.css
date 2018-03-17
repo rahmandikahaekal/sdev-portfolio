@@ -784,3 +784,36 @@ body {
 
 /* SERVICE
 =============================== */
+#services {
+    padding: 95px 0 65px;
+    background: #f2f2f2;
+}
+
+#services h2 {
+    margin-bottom: 30px;
+}
+
+.services-item {
+    padding: 30px 50px 30px 0;
+}
+
+.services-item i {
+    margin-bottom: 20px;
+}
+
+/* HIRE
+=============================== */
+#hire {
+    padding: 95px 0 90px;
+    background: #fff;
+}
+
+#hire p {
+    width: 30em;
+    max-width: 100%;
+}
+
+#hire .btn {
+    margin-top: 60px;
+    float: right;
+}
