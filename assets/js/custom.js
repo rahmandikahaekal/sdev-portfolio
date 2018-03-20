@@ -94,9 +94,7 @@
             duration: 1200,
             once: true,
             disable: 'mobile'
-        });
-
-
+        });     
 
 		$(function () {
 			$('#contact-form').validate({

@@ -555,6 +555,127 @@
 	</section>
 	<!-- END TESTIMONIAL -->
 
+	<!-- BLOG -->
+	<section id="blog">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h2>Blog Post</h2>
+				</div>
+
+				<!-- blog items -->
+				<div class="col-md-4 col-sm-6">
+					<div class="blog-item">
+						<a href="post.html" class="blog-img">
+							<img src="assets/img/blog/01.jpg" class="img-responsive" alt="Blog 1">
+						</a>
+						<div class="blog-desc">
+							<h4>
+								<a href="single.html">Dashboard Blog</a>
+							</h4>
+							<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+							<a href="single.html" class="btn btn-dark">Read more</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="blog-item">
+						<a href="post.html" class="blog-img">
+							<img src="assets/img/blog/02.jpg" class="img-responsive" alt="Blog 1">
+						</a>
+						<div class="blog-desc">
+							<h4>
+								<a href="single.html">Assets & Item Blog</a>
+							</h4>
+							<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+							<a href="single.html" class="btn btn-dark">Read more</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="blog-item">
+						<a href="post.html" class="blog-img">
+							<img src="assets/img/blog/03.jpg" class="img-responsive" alt="Blog 1">
+						</a>
+						<div class="blog-desc">
+							<h4>
+								<a href="single.html">UI/UX Blog</a>
+							</h4>
+							<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+							<a href="single.html" class="btn btn-dark">Read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END BLOG -->
+
+	<!-- CONTACT -->
+	<section id="contact">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h2>Contact Me</h2>
+				</div>
+				
+				<div class="col-md-6">
+					<div class="address-icons col-md-12">
+						<div class="col-md-4 col-sm-4">
+							<i class="fa fa-envelope-o fa-2x"></i>
+							<p>sctdev17@gmail.com</p>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<i class="fa fa-map-marker fa-2x"></i>
+							<p>
+								Karanganyar Kajen
+								<br>
+								Pekalongan, 51182
+							</p>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<i class="fa fa-phone fa-2x"></i>
+							<p>+62-896-8004-2687</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="col-md-12">
+						<!-- form input contact data -->
+						<form id='contact-form' name='contact' method='post'><input type='hidden' name='form-name' value='contact' />
+							<div class="row">
+								<div class="col-md-6 col-sm-6">
+									<div class="form-group">
+										<input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
+										<p class="help-block text-danger"></p>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<div class="form-group">
+										<input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+										<p class="help-block text-danger"></p>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<textarea name="message" id="message" class="form-control" rows="4" placeholder="Message..." required></textarea>
+								<p class="help-block text-danger"></p>
+							</div>
+
+							<div class="col-md-12 col-xs-12">
+								<button id="submit" type="submit" name="submit" class="btn btn-dark">Send Message</button>
+							</div>
+						</form>
+					</div>
+				</div>
+	
+				<div class="col-md-6">
+					<div id="map"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END CONTACT -->
+
 
 
 	<!-- JS PLUGIN -->
@@ -577,5 +698,22 @@
 	
 	<!-- MAIN JS -->
 	<script src="assets/js/custom.js"></script>
+	
+	<script type="text/javascript">
+		function initMap() {
+            var uluru = {lat: -7.031249, lng: 109.6078997};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 15,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+        }
+	</script>
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzlSeU9Mw2O-_nbfqVjg9g15vJy6uFQas&callback=initMap">
+    </script>
 </body>
 </html>
