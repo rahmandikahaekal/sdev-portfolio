@@ -1026,45 +1026,174 @@ textarea {
     resize: none;
 }
 
-fieldset {
-    border: 0px;
-    margin: 0;
-    padding: 0
-}
-
-#success,
-#error {
-    display: none
-}
-
-#success p,
-#error p {
-    display: block;
-}
-
-#success p {
-    color: #fff;
-    background: #48b14d;
-    text-align: center;
-    padding: 10px;
-    border: none;
-    margin-top: 20px;
-    border-radius: 2px;
-}
-
-#error p {
-    color: #fff;
-    background: #636363;
-    text-align: center;
-    padding: 10px;
-    border-radius: 2px;
-    border: none;
-    margin-top: 10px;
-}
-
 #map {
     height: 375px;
+    border-width: 2px;
     border-style: dotted;
     border-color: #000;
-    border-width: 2px;
+}
+
+/* Blog Post CSS
+=============================== */
+#header {
+    background-color: #777777;
+    background: no-repeat center center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center center;
+    margin-bottom: 50px;
+}
+
+#header .overlay-blog:after {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
+
+#header .site-heading, #header .post-heading, #header .page-heading {
+    color: #fff;
+    padding: 100px 0 50px;
+}
+
+#header .site-heading, #header .page-heading {
+    text-align: center;
+}
+
+#header .site-heading h1, #header .page-heading h1 {
+    font-size: 50px;
+    margin-top: 0;
+}
+
+#header .site-heading .subheading, #header .page-heading .subheading {
+    display: block;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.1;
+    margin: 10px 0 0;
+}
+
+#header .post-heading h1 {
+    font-size: 35px;
+}
+
+#header .post-heading .subheading, #header .post-heading .meta {
+    display: block;
+    line-height: 1.1;
+}
+
+#header .post-heading .subheading {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0 30px;
+}
+
+#header .post-heading .meta {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#header .post-heading .meta a {
+    color: #fff;
+}
+
+#post p {
+    width: 35em;
+    max-width: 100%;
+}
+
+#post .img-post {
+    margin: 20px 0 20px;
+    width: 40em;
+    max-width: 100%;
+}
+
+#footer {
+    padding: 20px 0 27px;
+    background: #fff;
+}
+
+#footer-post {
+    padding: 20px 0 0;
+    background: #fff;
+    border-top: 1px solid #f0f0f0;
+    margin-top: 100px;
+}
+
+#footer p {
+    color: #131313;
+}
+
+.social-icons-footer {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.social-icons-footer li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: -moz-inline-stack;
+    display: inline-block;
+}
+
+.social-icons-footer li a {
+    color: #131313;
+    background: rgba(42, 41, 41, 0);
+    font-size: 1.3em;
+    display: -moz-inline-stack;
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    padding: 10px 10px 8px 10px;
+    box-sizing: border-box;
+    -webkit-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+    margin-bottom: 0;
+}
+
+.social-icons-footer li a:hover {
+    color: #131313;
+}
+
+/* FOOTER
+=============================== */
+#footer {
+    padding: 20px 0 27px;
+    background: #fff;
+}
+
+#footer-post {
+    background: #f3f3f3;
+    padding: 30px 0;
+    margin-top: 100px;
+}
+
+#footer p {
+    color: #131313;
+}
+
+.social-icons-footer {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.social-icons-footer li {
+    display: -moz-inline-stack;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social-icons-footer li a {
+    color: #131313;
 }
